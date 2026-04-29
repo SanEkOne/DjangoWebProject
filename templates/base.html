@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Підтягуємо шаблони{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'main' %}">Главная</a>
+        <a href="{% url 'news' %}">Новости</a>
+        <a href="{% url 'management' %}">Руководство компании</a>
+        <a href="{% url 'about' %}">О компании</a>
+        <a href="{% url 'contacts' %}">Контакты</a>
+    </header>
+    <br/>
+    <br/>
+    <main>
+        <div class="main_info">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/3840px-McDonald%27s_Golden_Arches.svg.png" />
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+</body>
+</html>
