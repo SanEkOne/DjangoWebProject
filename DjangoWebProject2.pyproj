@@ -36,19 +36,47 @@
     <Compile Include="DjangoWebProject2\settings.py" />
     <Compile Include="DjangoWebProject2\urls.py" />
     <Compile Include="DjangoWebProject2\wsgi.py" />
+    <Compile Include="Management\admin.py" />
+    <Compile Include="Management\apps.py" />
+    <Compile Include="Management\migrations\__init__.py" />
+    <Compile Include="Management\models.py" />
+    <Compile Include="Management\tests.py" />
+    <Compile Include="Management\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Management\views.py" />
+    <Compile Include="Management\__init__.py" />
+    <Compile Include="News\admin.py" />
+    <Compile Include="News\apps.py" />
+    <Compile Include="News\migrations\__init__.py" />
+    <Compile Include="News\models.py" />
+    <Compile Include="News\tests.py" />
+    <Compile Include="News\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="News\views.py" />
+    <Compile Include="News\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DjangoWebProject2\" />
+    <Folder Include="Management\" />
+    <Folder Include="Management\migrations\" />
+    <Folder Include="Management\templates\" />
+    <Folder Include="Management\templates\Management\" />
+    <Folder Include="News\" />
+    <Folder Include="News\migrations\" />
+    <Folder Include="News\templates\" />
+    <Folder Include="News\templates\News\" />
     <Folder Include="static\" />
     <Folder Include="static\css\" />
     <Folder Include="templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Management\templates\Management\index.html" />
+    <Content Include="News\templates\News\index.html" />
     <Content Include="static\css\styles.css" />
     <Content Include="templates\about.html" />
-    <Content Include="templates\management.html" />
     <Content Include="templates\contacts.html" />
-    <Content Include="templates\news.html" />
     <Content Include="templates\base.html" />
     <Content Include="templates\main.html">
       <SubType>Code</SubType>

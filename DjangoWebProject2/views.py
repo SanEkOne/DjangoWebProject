@@ -9,7 +9,6 @@ def main_page(request):
 def news_page(request):
     return render(request, 'news.html')
 
-
 def management_page(request):
     return render(request, 'management.html')
 
