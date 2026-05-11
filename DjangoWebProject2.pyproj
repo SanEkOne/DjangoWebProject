@@ -75,6 +75,7 @@
     <Content Include="Management\templates\Management\index.html" />
     <Content Include="News\templates\News\index.html" />
     <Content Include="static\css\styles.css" />
+    <Content Include="templates\404.html" />
     <Content Include="templates\about.html" />
     <Content Include="templates\contacts.html" />
     <Content Include="templates\base.html" />
