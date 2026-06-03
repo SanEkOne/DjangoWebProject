@@ -5,7 +5,6 @@ import requests
 def main_page(request):
     return render(request, 'main.html')
 
-
 def news_page(request):
     return render(request, 'news.html')
 

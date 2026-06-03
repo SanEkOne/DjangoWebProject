@@ -1,3 +1,5 @@
+/*---------------------------------------|  Main |---------------------------------------*/
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -58,3 +60,127 @@ main {
     width: 500px;
 }
 
+/*------------------------------------| Product form |------------------------------------------*/
+
+.contact-form {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+    .contact-form p {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form label {
+        font-weight: bold;
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        padding: 10px 14px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 15px;
+        transition: border-color 0.2s, box-shadow 0.2s;
+        outline: none;
+        width: 100%;
+        box-sizing: border-box; 
+    }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+
+.btn-wrap {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    width: 100%;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+/*------------------------------------| Products |------------------------------------------*/
+
+/* styles.css */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    }
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #1e1e1e;
+}
+
+.product-card h3 {
+    margin: 15px 15px 8px 15px;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    margin: 5px 15px;
+    color: #b0b0b0;
+}
+
+    .product-card p:last-child {
+        color: #4ade80;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
