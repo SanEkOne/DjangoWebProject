@@ -3,6 +3,8 @@ import requests
 from .models import ProductApplication
 from .forms import ProductForm
 from django.contrib import messages
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
 def index(request):
     products = ProductApplication.objects.all()
@@ -24,3 +26,16 @@ def product_form(request):
         form = ProductForm()
 
     return render(request, 'Store/product_form.html', {'form': form})
+
+
+@api_view(['GET'])
+def products_list(request):
+    products = ProductApplication.objects.all()     #/api/products/
+    data = [{ 
+        'id': a.id,
+        'title': a.title,
+        'price': a.price,
+        'description': a.description,
+        'image': a.image.url if a.image else None,
+    } for a in products]
+    return Response(data) 
